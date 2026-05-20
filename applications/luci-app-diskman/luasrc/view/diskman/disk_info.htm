@@ -27,7 +27,8 @@
             }
           }
         })
-        // handle partitons info
+        // handle partitons info 以下注释掉，对于大容量的显示异常
+        <!--
         if (disk_info.partitions && disk_info.partitions.length > 0) {
           let partitons_div
           if (item.nodeName == "TR") {
@@ -65,6 +66,7 @@
           }
           item.insertAdjacentHTML('afterend', partitons_div);
         }
+        -->
       })
     })
     //raid table
